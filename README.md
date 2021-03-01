@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Live version
+
+Open [this link](https://bookstoremicroverse.herokuapp.com/) to view it on heroku.
+
 ## Available Scripts
 
 In the project directory, you can run:
