@@ -1,4 +1,6 @@
 import books from './books'
 
 import { combineReducers } from 'redux'
-const rootReducer = combineReducers({ potato: potatoReducer, tomato: tomatoReducer })
+const rootReducer = combineReducers({ books })
+
+export default rootReducer;
