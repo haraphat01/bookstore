@@ -1,8 +1,17 @@
+## Bookstore
+
+This project was bootstrapped with Create React App. We developed a bookstore application for a fictional company using Redux and React where users can track their reading progress from the bookstore.
+The project includes the basic features of
+
+- Rendering the current books available in the bookstore
+- Updating the bookstore with recent books usign the Add book button
+- Removing books from the bookstore
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Live version
+### Live Demo
 
 Open [this link](https://bookstoremicroverse.herokuapp.com/) to view it on heroku.
 
@@ -72,3 +81,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authors
+
+**Vitalie Melnic**
+
+- Github: [@vmwhoami](https://github.com/vmwhoami/)
+- Twitter: [@vmwhoami](https://twitter.com/vmwhoami)
+- Linkedin: [vitalie-melnic](https://www.linkedin.com/in/vitalie-melnic/)
+
+**Arafat Akata**
+
+- Github: [@haraphat01](https://github.com/haraphat01)
+- Twitter: [@haraphat01](https://twitter.com/haraphat01)
+- Linkedin: [arafat-akata](https://www.linkedin.com/in/arafat-akata/)
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/vmwhoami/TheRunner/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
