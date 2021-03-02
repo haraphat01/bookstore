@@ -10,13 +10,13 @@ import rootReducer from './reducers ';
 const initial = {
   books: [
     {
-      id: 1,
+      id: Math.floor(Math.random() * 100),
       title: 'Book of life',
       category: 'Adventure',
     },
 
     {
-      id: 2,
+      id: Math.floor(Math.random() * 100),
       title: 'Book of heaven',
       category: 'Fiction',
     },
