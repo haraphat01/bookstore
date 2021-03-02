@@ -7,6 +7,20 @@ import { createStore } from 'redux'
 import rootReducer from "./reducers ";
 import { Provider } from 'react-redux'
 
+let defolt = [
+  {
+    id: 1,
+    title: "Book of life",
+    category: "Adventure"
+  },
+
+  {
+    id: 2,
+    title: "Book of heaven",
+    category: "Fiction"
+  }
+]
+
 const store = createStore(
   rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
