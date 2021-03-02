@@ -1,4 +1,4 @@
-
+import {CREATE_BOOK, REMOVE_BOOK} from "./actionTypes"
 let defolt = [
   {
     id: 1,
@@ -15,9 +15,9 @@ let defolt = [
 
 const books = (state = defolt, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case CREATE_BOOK:
       return state + 1
-    case 'DECREMENT':
+    case REMOVE_BOOK:
       return state - 1
     default:
       return state
