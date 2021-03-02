@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addBook } from '../actions ';
 
 const BooksForm = () => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -11,6 +12,8 @@ const BooksForm = () => {
     } else {
       setCatValue(e.target.value);
     }
+    const obj = { title, category: catValue };
+    dispatch(addBook(obj));
   };
 
   const handleSubmit = event => {
@@ -43,4 +46,4 @@ const BooksForm = () => {
   );
 };
 
-export default BooksForm;
+export default connect()(BooksForm);
