@@ -1,39 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux'
-import rootReducer from "./reducers ";
-import { Provider } from 'react-redux'
+import rootReducer from './reducers ';
 
-let defolt = [
-  {
-    id: 1,
-    title: "Book of life",
-    category: "Adventure"
-  },
+const initial = {
+  books: [
+    {
+      id: 1,
+      title: 'Book of life',
+      category: 'Adventure',
+    },
 
-  {
-    id: 2,
-    title: "Book of heaven",
-    category: "Fiction"
-  }
-]
-
+    {
+      id: 2,
+      title: 'Book of heaven',
+      category: 'Fiction',
+    },
+  ],
+};
+/* eslint-disable no-underscore-dangle */
 const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
-
-
+  rootReducer, initial,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
+/* eslint-enable */
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

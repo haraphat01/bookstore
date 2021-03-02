@@ -1,30 +1,16 @@
-import { CREATE_BOOK, REMOVE_BOOK } from "./actionTypes"
-let defolt = [
-  {
-    id: 1,
-    title: "Book of life",
-    category: "Adventure"
-  },
+import { CREATE_BOOK, REMOVE_BOOK } from './actionTypes';
 
-  {
-    id: 2,
-    title: "Book of heaven",
-    category: "Fiction"
-  }
-]
-
-const books = (state = defolt, action) => {
+const books = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [...state,
-      action.book
-      ]
+        action.book,
+      ];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id)
+      return state.filter(book => book.id !== action.id);
     default:
-      return state
+      return state;
   }
-
-}
+};
 
 export default books;

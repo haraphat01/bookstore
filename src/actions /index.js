@@ -1,15 +1,10 @@
-import { CREATE_BOOK, REMOVE_BOOK } from "../reducers/actionTypes"
-const addBook = (book) => {
-    return {
-        type: CREATE_BOOK,
-        book
-    }
+import { CREATE_BOOK, REMOVE_BOOK } from '../reducers/actionTypes';
 
-}
+export const addBook = book => ({
+  type: CREATE_BOOK,
+  book,
+});
 
-const removeBook = (id) => {
-    return {
-        type: REMOVE_BOOK, id
-    }
-
-}
+export const removeBook = id => ({
+  type: REMOVE_BOOK, id,
+});
