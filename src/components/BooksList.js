@@ -5,12 +5,14 @@ const BooksList = props => {
   const { books } = props;
   return (
     <table>
-      <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
-      {books.map(book => <Book key={book.id} book={book} />)}
+      <tbody>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+        {books.map(book => <Book key={book.id} book={book} />)}
+      </tbody>
     </table>
   );
 };
