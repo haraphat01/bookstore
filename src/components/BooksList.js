@@ -27,11 +27,11 @@ const Book = ({ book }) => {
 };
 
 BooksList.propTypes = {
-  books: PropTypes.element.isRequired,
+  books: PropTypes.instanceOf(Array).isRequired,
 };
 
 Book.propTypes = {
-  book: PropTypes.element.isRequired,
+  book: PropTypes.instanceOf(Object).isRequired,
 };
 
 const mapStateToProps = state => ({
