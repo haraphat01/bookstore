@@ -1,6 +1,7 @@
-import books from "../reducers /books"
+import { connect } from 'react-redux';
 
-const BooksList = () => {
+const BooksList = (props) => {
+    const { books } = props
     return (
         <table>
             <tr>
@@ -8,19 +9,25 @@ const BooksList = () => {
                 <th>Title</th>
                 <th>Category</th>
             </tr>
-            {books.map((book) => {
-                const { id, title, category } = book
-                return (
-                    <tr>
-                        <th>{id}</th>
-                        <th>{title}</th>
-                        <th>{category}</th>
-                    </tr>
-                )
+            {books.map(book => {
+                return <Book  {...book} />
             })}
-
         </table>
     )
 }
 
-export default BooksList
+const Book = ({ id, title, category }) => {
+
+    return (
+        <tr>
+            <th>{id}</th>
+            <th>{title}</th>
+            <th>{category}</th>
+        </tr>
+    )
+}
+
+const mapStateToProps = state => ({
+    books: state.books
+})
+export default connect(mapStateToProps, null)(BooksList) 
