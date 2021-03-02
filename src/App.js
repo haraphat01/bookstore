@@ -1,8 +1,8 @@
-import BooksForm from './components/ BooksForm';
+import BooksForm from './containers/ BooksForm';
 
 import './App.css';
 
-import BooksList from './components/BooksList';
+import BooksList from './containers/BooksList';
 
 function App() {
   return (
