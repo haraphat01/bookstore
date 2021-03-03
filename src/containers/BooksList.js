@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from '../components/Book';
 
 const BooksList = props => {
   const { books } = props;
@@ -18,8 +17,23 @@ const BooksList = props => {
   );
 };
 
+const Book = ({ book }) => {
+  const { id, title, category } = book;
+  return (
+    <tr>
+      <th>{id}</th>
+      <th>{title}</th>
+      <th>{category}</th>
+    </tr>
+  );
+};
+
 BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
+};
+
+Book.propTypes = {
+  book: PropTypes.instanceOf(Object).isRequired,
 };
 
 const mapStateToProps = state => ({

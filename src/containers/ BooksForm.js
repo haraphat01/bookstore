@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
 import { addBook } from '../actions ';
 
 const BooksForm = () => {
@@ -13,9 +12,8 @@ const BooksForm = () => {
     } else {
       setCatValue(e.target.value);
     }
-    // const obj = { title, category: catValue };
-    // dispatch(addBook(obj));
-    props.store.dispatch(addBook());
+    const obj = { title, category: catValue };
+    dispatch(addBook(obj));
   };
 
   const handleSubmit = event => {
@@ -47,6 +45,5 @@ const BooksForm = () => {
     </form>
   );
 };
-const mapStateToProps = state => state;
 
-export default connect(mapStateToProps)(BooksForm);
+export default connect()(BooksForm);
