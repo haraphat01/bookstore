@@ -40,7 +40,7 @@ const BooksForm = props => {
         value={title}
 
       />
-      <select onChange={e => handleChange(e)}>
+      <select onClick={e => handleChange(e)}>
         {categories.map(category => (
           <option value={category} key={category}>
             {category}
