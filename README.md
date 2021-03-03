@@ -104,7 +104,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/vmwhoami/TheRunner/issues).
+Feel free to check the [issues page](https://github.com/haraphat01/bookstore/issues).
 
 ## Show your support
 
