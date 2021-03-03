@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addBook } from '../actions ';
 
 const BooksForm = props => {
+  const { addBook } = props;
+
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [title, setTitle] = useState('');
   const [catValue, setCatValue] = useState('');
@@ -13,13 +16,12 @@ const BooksForm = props => {
     } else {
       setCatValue(e.target.value);
     }
-    // const obj = { title, category: catValue };
-    console.log(props);
   };
 
   const handleSubmit = event => {
     event.preventDefault();
-    // props.store.dispatch(addBook());
+    const obj = { title, category: catValue };
+    addBook(obj);
   };
 
   return (
@@ -49,9 +51,12 @@ const BooksForm = props => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  addBook: () => {
-    dispatch(addBook());
+  addBook: obj => {
+    dispatch(addBook(obj));
   },
 });
 
+BooksForm.propTypes = {
+  addBook: PropTypes.func.isRequired,
+};
 export default connect(null, mapDispatchToProps)(BooksForm);
