@@ -1,10 +1,13 @@
-import * as act from './..reducers';
+import * as act from '../reducers/actionTypes';
 
-export const addBook = book => ({
+require;
+
+const addBook = book => ({
   type: act.CREATE_BOOK,
   book,
 });
 
-export const removeBook = id => ({
+ const removeBook = id => ({
   type: act.REMOVE_BOOK, id,
 });
+export {addBook, removeBook}
