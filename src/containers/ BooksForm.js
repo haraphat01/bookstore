@@ -21,7 +21,11 @@ const BooksForm = props => {
   const handleSubmit = event => {
     event.preventDefault();
     const obj = { title, category: catValue };
-    addBook(obj);
+    if (title && catValue) {
+      addBook(obj);
+      setTitle('');
+      setCatValue('');
+    }
   };
 
   return (
