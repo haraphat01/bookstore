@@ -1,10 +1,15 @@
-import * as act from './..reducers';
+import * as act from '../actionTypes';
 
-export const addBook = book => ({
+const addBook = book => ({
   type: act.CREATE_BOOK,
-  book,
+  payload: {
+
+    title: book.title,
+    category: book.category,
+  },
 });
 
-export const removeBook = id => ({
+const removeBook = id => ({
   type: act.REMOVE_BOOK, id,
 });
+export { addBook, removeBook };
