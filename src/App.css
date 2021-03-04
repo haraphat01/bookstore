@@ -1,39 +1,68 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ :root{
+   --monsterat: 'Montserrat', sans-serif;
+    
+    --bubble-gum-pink: #ff5ab7;
+    --black: #1e1e1e;
+    --medium-blue: #307bbe;
+    --white: #fafafa;
+    --pinkish-grey: #c4c4c4;
+    --pale-grey: #f5f6fa;
+    --dodger-blue: #379cf6;
+    --azure: #0290ff;
+    --warm-grey: #888888;
+    --cool-blue: #4386bf;
+    --black-5: rgba(0, 0, 0, 0.05);
+    --white-two: #ffffff;
+    --black-two: #121212;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .container{
+    margin: 0 auto;
+    background-color: var(--white);
+    border: solid 1px #e8e8e8;
+  }
+
+.navbar{
   display: flex;
-  flex-direction: column;
   align-items: center;
+   width: 90vw;
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 99px 27px 100px;
+  background-color: var(--white-two);
+}
+
+ 
+
+.logo h1{
+  font-family: var( --monsterat);
+  color: var(--azure);
+}
+
+.navigation{
+  display: flex;
+  list-style: none;
+}
+
+.navigation li{
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.userIcon{
+  width: 45px;
+  height: 45px;
+   
+  /* padding: 14px; */
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.userSvg{
+  fill: var(--azure);
+  width: 60px;
+  height: 60px;
 }

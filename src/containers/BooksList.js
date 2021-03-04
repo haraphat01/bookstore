@@ -10,7 +10,8 @@ const BooksList = ({
   const handleFilterChange = str => {
     changeFilter(str);
   };
-  const categories = books.map(book => book.category);
+  let categories = books.map(book => book.category);
+  categories = [...new Set(categories)];
   const handleRemoveBook = id => {
     removeBook(id);
   };
