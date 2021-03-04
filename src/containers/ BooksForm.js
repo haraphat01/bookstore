@@ -38,6 +38,7 @@ const BooksForm = ({ addBook }) => {
         value={title}
 
       />
+
       <select onClick={e => handleChange(e)}>
         {categories.map(category => (
           <option value={category} key={category}>
