@@ -1,9 +1,11 @@
+import { CircularProgress } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => {
   const { id, title, category } = book;
   const names = ['William Shakespeare', 'Emily Dickinson', 'Arthur Conan Doyle', 'Leo Tolstoy', 'Edgar Allan Poe', 'Robert Ervin Howard'];
   const authors = arr => names[Math.floor(Math.random() * arr.length)];
+  const randomNumber = Math.floor(Math.random() * 100);
   return (
     <article className="book">
 
@@ -21,12 +23,28 @@ const Book = ({ book, handleRemoveBook }) => {
           <button type="button">Edit</button>
         </div>
 
-        <div className="progress">
-          <div className="circle" />
+      </div>
+      <div className="progress">
+
+        <CircularProgress variant="determinate" value={randomNumber} />
+
+        <div className="percentage">
+
+          <h2>
+            {' '}
+            {randomNumber}
+            %
+          </h2>
+
+          <p>Completed</p>
         </div>
 
       </div>
-
+      <div className="lastElement">
+        <p>CURRENT CHAPTER</p>
+        <p>CURRENT CHAPTER</p>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
     </article>
   );
 };
