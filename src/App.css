@@ -20,7 +20,7 @@
   .container{
     margin: 0 auto;
     background-color: var(--white);
-    border: solid 1px #e8e8e8;
+    
     overflow-x: hidden;
   }
 
@@ -52,6 +52,7 @@
 .navigation li{
   text-transform: uppercase;
   margin-left: 20px;
+  font-family: var(--black-two);
 }
 
 .userIcon{
@@ -78,7 +79,7 @@ transform: translate(-31%,-32%);
 
 .bookContainer{
   width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .book{
@@ -91,6 +92,7 @@ transform: translate(-31%,-32%);
   height: 170px;
 }
 
+ 
 .bookInfo{
   display: flex;
   flex-direction: column;
@@ -176,10 +178,14 @@ flex-direction: column;
 
 
 .addbookform {
+
+  border-top: solid 1px #e8e8e8;
   display: flex;
   flex-direction: column;
   width: 90vw;
- margin: 0 auto;
+ margin: 20px auto;
+ justify-items: center;
+ padding-top: 20px;
 }
 
 .addbookform h2{
@@ -193,8 +199,9 @@ flex-direction: column;
 
 .submit_button {
   width: 184px;
-  height: 45px;
-  padding: 12.8px 19px 14.2px 22px;
+ margin-left: 20px;
+text-transform: uppercase;
+color: white;
   border: none;
   border-radius: 3px;
   background-color: var(--azure);
@@ -204,11 +211,11 @@ flex-direction: column;
   width: 60%;
   height: 40px;
    opacity: 0.2;
-
+padding: 10px;
 }
 
 .category{
-  height: 40px;
+ flex: 0 1 250px;
   margin-left: 50px;
   opacity: 0.2;
 }
