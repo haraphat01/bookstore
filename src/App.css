@@ -50,7 +50,9 @@
   opacity: 0.2;
   padding: 10px 20px;
 }
-
+.catSelect:focus{
+  opacity: 1;
+}
 .navigation {
   display: flex;
   list-style: none;
