@@ -32,7 +32,7 @@ const Book = ({ book, handleRemoveBook }) => {
 
           <h2>
             {' '}
-            {randomNumber}
+            {`${randomNumber} `}
             %
           </h2>
 
@@ -41,9 +41,12 @@ const Book = ({ book, handleRemoveBook }) => {
 
       </div>
       <div className="lastElement">
-        <p>CURRENT CHAPTER</p>
-        <p>CURRENT CHAPTER</p>
-        <button type="button">UPDATE PROGRESS</button>
+        <p className="chapter">CURRENT CHAPTER</p>
+        <p className="chapternr">
+          Chapter
+          {randomNumber}
+        </p>
+        <button className="updatepBtn" type="button">UPDATE PROGRESS</button>
       </div>
     </article>
   );
