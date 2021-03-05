@@ -50,9 +50,11 @@
   opacity: 0.2;
   padding: 10px 20px;
 }
-.catSelect:focus{
+
+.catSelect:focus {
   opacity: 1;
 }
+
 .navigation {
   display: flex;
   list-style: none;
@@ -225,17 +227,21 @@
   padding: 10px;
   background-color: var(--white-two);
 }
-.input_box:focus{
+
+.input_box:focus {
   opacity: 1;
 }
+
 .category {
   flex: 0 1 250px;
   margin-left: 50px;
   opacity: 0.2;
 }
-.category:focus{
+
+.category:focus {
   opacity: 1;
 }
+
 .percentage {
   margin-left: 20px;
 }
