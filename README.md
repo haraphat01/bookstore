@@ -8,6 +8,7 @@ The project includes the basic features of
 - Removing books from the bookstore
 - Filtering through the books by category.
 
+
 ![screenshot](./bookstore.gif)
 
 ## Getting Started
