@@ -223,13 +223,17 @@
   padding: 10px;
   background-color: var(--white-two);
 }
-
+.input_box:focus{
+  opacity: 1;
+}
 .category {
   flex: 0 1 250px;
   margin-left: 50px;
   opacity: 0.2;
 }
-
+.category:focus{
+  opacity: 1;
+}
 .percentage {
   margin-left: 20px;
 }
