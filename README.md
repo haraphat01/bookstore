@@ -6,8 +6,28 @@ The project includes the basic features of
 - Rendering the current books available in the bookstore
 - Updating the bookstore with recent books usign the Add book button
 - Removing books from the bookstore
+- Filtering through the books by category.
 
-# Getting Started with Create React App
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+Make sure Node.js is running on your local machine
+
+### Setup
+
+```bash
+$ git clone https://github.com/haraphat01/bookstore.git
+$ cd bookstore
+```
+
+Install modules:
+
+```
+npm install
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
