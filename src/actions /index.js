@@ -12,4 +12,11 @@ const addBook = book => ({
 const removeBook = id => ({
   type: act.REMOVE_BOOK, id,
 });
-export { addBook, removeBook };
+
+const changeFilter = category => ({
+  type: act.CHANGE_FILTER,
+  category,
+
+});
+
+export { addBook, removeBook, changeFilter };
