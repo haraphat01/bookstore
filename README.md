@@ -35,7 +35,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Live Demo
 
-Open [this link](https://bookstoreakatavitalie.herokuapp.com/) to view it on heroku.
+Open [this link](https://bookstoremilestone5.herokuapp.com/) to view it on heroku.
 
 ## Available Scripts
 
