@@ -26,15 +26,18 @@
 
 .navbar{
   display: flex;
- justify-content: space-around;
-  width: 90vw;
   height: 95px;
-  margin: 0 0 38px;
-  padding: 23px 99px 27px 100px;
   background-color: var(--white-two);
+  align-items: center;
+  margin-bottom: 20px;
 }
 
- 
+ .navcontainer{
+   display: flex;
+   margin: 0 auto;
+   align-items: center;
+   width: 90vw;
+ }
 
 .logo h1{
   font-family: var( --monsterat);
@@ -52,19 +55,27 @@
 }
 
 .userIcon{
-  width: 35px;
-  height: 35px;
-    border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   border: solid 2px #e8e8e8;
-  
+  margin-left: auto;
+
+}
+.svgCont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .userSvg{
   fill: var(--azure);
-  width: 60px;
-  height: 60px;
-  padding-left: 7px;
-  padding-top: 5px;
+  width: 45px;
+  height: 45px;
+
 }
+
 
 .bookContainer{
   width: 90vw;
@@ -78,15 +89,19 @@
   padding: 32px 147px 26px 27px;
   margin-bottom: 15px;
   display: flex;
+  height: 170px;
 }
 
 .bookInfo{
   display: flex;
   flex-direction: column;
 }
-
-  p{
-  margin: 0 64px 0 0;
+.catTitAuth{
+display: flex;
+flex-direction: column;
+}
+.catTitAuth p{
+  margin: 0 39px 0 0;
   opacity: 0.5;
   font-family: var( --monsterat);
   font-size: 14px;
@@ -97,7 +112,7 @@
   letter-spacing: normal;
   color: var(--black-two)
 }
-.bookInfo h4{
+.catTitAuth h4{
  
   font-family: var(--robotoSlab);
   font-size: 14px;
@@ -110,8 +125,7 @@
   color: var(--cool-blue);
 }
 
-.bookInfo h2{
- 
+.catTitAuth h2{
   font-family: var(--robotoSlab);
   font-size: 22px;
   font-weight: bold;
@@ -124,6 +138,7 @@
 
 .bookBtns{
   display:flex;
+  margin-top: 20px;
 }
 
 .bookBtns button{
@@ -137,9 +152,13 @@
   line-height: normal;
   letter-spacing: normal;
   color: var(--cool-blue);
+  cursor: pointer;
 
 }
-
+.bookBtns button:first-child {
+  padding-right:20px;
+  padding-left: 0;
+}
 .bookBtns button:not(:first-child){
   padding: 0 20px;
 }

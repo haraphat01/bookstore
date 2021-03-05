@@ -6,19 +6,21 @@ const Book = ({ book, handleRemoveBook }) => {
   return (
     <article className="book">
       <div className="bookInfo">
-        <p>{category}</p>
-        <h2>{title}</h2>
-        <h4>Author</h4>
-      </div>
+        <div className="catTitAuth">
+          <p>{category}</p>
+          <h2>{title}</h2>
+          <h4>Author</h4>
+        </div>
+        <div className="bookBtns">
+          <button type="button">Comment</button>
+          <button type="button" onClick={() => handleRemoveBook(id)}>Remove</button>
+          <button type="button">Edit</button>
+        </div>
 
-      <div className="bookBtns">
-        <button type="button">Comment</button>
-        <button type="button" onClick={() => handleRemoveBook(id)}>Remove</button>
-        <button type="button">Edit</button>
-      </div>
+        <div className="progress">
+          <div className="circle" />
 
-      <div className="circleContainer">
-        <div className="circle" />
+        </div>
       </div>
 
     </article>
