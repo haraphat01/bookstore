@@ -38,16 +38,17 @@ const BooksForm = ({ addBook }) => {
           placeholder="Book Title"
           onChange={e => handleChange(e)}
           value={title}
+          className="input_box"
         />
 
-        <select onClick={e => handleChange(e)}>
+        <select className="category" onClick={e => handleChange(e)}>
           {categories.map(category => (
             <option value={category} key={category}>
               {category}
             </option>
           ))}
         </select>
-        <button type="submit">Add Book</button>
+        <button type="submit" className="submit_button">Add Book</button>
         <h4>{title}</h4>
         <h2>{catValue}</h2>
       </form>
