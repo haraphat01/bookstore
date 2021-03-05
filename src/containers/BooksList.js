@@ -18,12 +18,14 @@ const BooksList = ({
   return (
     <>
       <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} />
-      <table>
+      <table className="table">
         <tbody>
           <tr>
+
             <th>Id</th>
-            <th>Title</th>
             <th>Category</th>
+            <th>Title</th>
+
             <th>Remove</th>
           </tr>
           {books.filter(book => {

@@ -77,16 +77,22 @@
 }
 
 .submit_button {
-  padding: 5px;
-  /* width: 150px; */
+  /* padding: 5px;
   height: 40px;
    margin-left: 50px;
-  /* padding: 12.8px 19px 14.2px 22px; */
   border-radius: 3px;
   background-color: var(--azure);
   color: white;
   font-size: large;
-  width: 150px;
+  width: 150px; */
+
+  width: 184px;
+  height: 45px;
+  margin: 19px 0 0 34px;
+  padding: 12.8px 19px 14.2px 22px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--azure);
 }
 .input_box{
   width: 60%;
@@ -105,4 +111,8 @@
   height: 40px;
   margin-left: 50px;
   opacity: 0.2;
+}
+
+.table {
+
 }
