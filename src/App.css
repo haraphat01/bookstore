@@ -21,12 +21,13 @@
     margin: 0 auto;
     background-color: var(--white);
     border: solid 1px #e8e8e8;
+    overflow-x: hidden;
   }
 
 .navbar{
   display: flex;
-  align-items: center;
-   width: 90vw;
+ justify-content: space-around;
+  width: 90vw;
   height: 95px;
   margin: 0 0 38px;
   padding: 23px 99px 27px 100px;
@@ -51,18 +52,25 @@
 }
 
 .userIcon{
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
    
   /* padding: 14px; */
   border-radius: 50%;
-  border: solid 1px #e8e8e8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: solid 2px #e8e8e8;
+  
 }
 .userSvg{
   fill: var(--azure);
   width: 60px;
   height: 60px;
+  padding-left: 7px;
+  padding-top: 5px;
+}
+
+.addbookform {
+  display: flex;
+  flex-direction: column;
+ justify-items: center;
+ background-color: ;
 }
