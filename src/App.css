@@ -60,19 +60,18 @@
   border-radius: 50%;
   border: solid 2px #e8e8e8;
   margin-left: auto;
-
+  position: relative;
 }
-.svgCont{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.svgcont{
+ position: absolute;
+ top:50%;
+left: 50%;
+transform: translate(-31%,-32%);
 }
 .userSvg{
   fill: var(--azure);
-  width: 45px;
-  height: 45px;
+  width: 32px;
+  height: 32px;
 
 }
 
@@ -179,18 +178,27 @@ flex-direction: column;
 .addbookform {
   display: flex;
   flex-direction: column;
-  margin-left: 5em;
- 
+  width: 90vw;
+ margin: 0 auto;
+}
+
+.addbookform h2{
+  color: var(--warm-grey);
+  margin-bottom: 20px;
+}
+
+.form{
+  display: flex;
 }
 
 .submit_button {
   width: 184px;
   height: 45px;
-  margin: 19px 0 0 34px;
   padding: 12.8px 19px 14.2px 22px;
   border: none;
   border-radius: 3px;
   background-color: var(--azure);
+  margin-left: auto;
 }
 .input_box{
   width: 60%;

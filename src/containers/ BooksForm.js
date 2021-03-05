@@ -29,8 +29,7 @@ const BooksForm = ({ addBook }) => {
   return (
     <div className="addbookform">
       <h2>ADD NEW BOOK</h2>
-      <form onSubmit={handleSubmit} name="form">
-
+      <form onSubmit={handleSubmit} name="form" className="form">
         <input
           type="text"
           id="title"
@@ -40,7 +39,6 @@ const BooksForm = ({ addBook }) => {
           value={title}
           className="input_box"
         />
-
         <select className="category" onClick={e => handleChange(e)}>
           {categories.map(category => (
             <option value={category} key={category}>
@@ -49,8 +47,6 @@ const BooksForm = ({ addBook }) => {
           ))}
         </select>
         <button type="submit" className="submit_button">Add Book</button>
-        <h4>{title}</h4>
-        <h2>{catValue}</h2>
       </form>
     </div>
   );
