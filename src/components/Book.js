@@ -9,7 +9,7 @@ const Book = ({ book, handleRemoveBook }) => {
   return (
     <article className="book">
 
-      <div className="bookInfo">
+      <div className="catTitAuth">
 
         <div className="catTitAuth">
           <p>{category}</p>

@@ -121,10 +121,6 @@
   font-family: var(--monsterat);
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--black-two);
 }
 
@@ -132,20 +128,12 @@
   font-family: var(--robotoSlab);
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--cool-blue);
 }
 
 .catTitAuth h2 {
   font-family: var(--robotoSlab);
   font-size: 22px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: var(--black-two);
 }
@@ -161,10 +149,6 @@
   font-family: var(--robotoSlab);
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--cool-blue);
   cursor: pointer;
 }
