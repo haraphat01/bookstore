@@ -18,28 +18,21 @@ const BooksList = ({
   return (
     <>
       <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} />
-      <table>
-        <tbody>
-          <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-          {books.filter(book => {
-            if (filter === 'All') {
-              return book;
-            }
-            return book.category === filter;
-          }).map(book => (
-            <Book
-              key={book.id}
-              book={book}
-              handleRemoveBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+      <div className="bookContainer">
+        {books.filter(book => {
+          if (filter === 'All') {
+            return book;
+          }
+          return book.category === filter;
+        }).map(book => (
+          <Book
+            key={book.id}
+            book={book}
+            handleRemoveBook={handleRemoveBook}
+          />
+        ))}
+
+      </div>
     </>
   );
 };
