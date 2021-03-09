@@ -4,6 +4,7 @@ import Book from '../components/Book';
 
 const BooksList = props => {
   const { books } = props;
+
   return (
     <table>
       <tbody>
