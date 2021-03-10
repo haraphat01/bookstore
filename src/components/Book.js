@@ -2,7 +2,7 @@ import { CircularProgress } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => {
-  const { id, name, category } = book;
+  const { id, title, category } = book;
   const names = ['William Shakespeare', 'Emily Dickinson', 'Arthur Conan Doyle', 'Leo Tolstoy', 'Edgar Allan Poe', 'Robert Ervin Howard'];
   const authors = arr => names[Math.floor(Math.random() * arr.length)];
   const randomNumber = Math.floor(Math.random() * 100);
@@ -13,7 +13,7 @@ const Book = ({ book, handleRemoveBook }) => {
 
         <div className="catTitAuth">
           <p>{category}</p>
-          <h2>{name}</h2>
+          <h2>{title}</h2>
           <h4>{authors(names)}</h4>
         </div>
 

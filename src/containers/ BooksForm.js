@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addBook } from '../actions ';
+import { saveBookToDb } from '../actions ';
 
-const BooksForm = ({ addBook }) => {
+const BooksForm = ({ saveBookToDb }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [title, setTitle] = useState('');
   const [catValue, setCatValue] = useState('');
@@ -20,7 +20,7 @@ const BooksForm = ({ addBook }) => {
     event.preventDefault();
     const obj = { title, category: catValue };
     if (title && catValue) {
-      addBook(obj);
+      saveBookToDb(obj);
       setTitle('');
       setCatValue('');
     }
@@ -53,12 +53,16 @@ const BooksForm = ({ addBook }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  addBook: obj => {
-    dispatch(addBook(obj));
+  // addBook: obj => {
+  //   dispatch(addBook(obj));
+  // },
+  saveBookToDb: obj => {
+    dispatch(saveBookToDb(obj));
   },
 });
 
 BooksForm.propTypes = {
-  addBook: PropTypes.func.isRequired,
+  // addBook: PropTypes.func.isRequired,
+  saveBookToDb: PropTypes.func.isRequired,
 };
 export default connect(null, mapDispatchToProps)(BooksForm);
