@@ -1,7 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actionTypes';
 
 let id = 0;
-
 const books = (state = [], action) => {
   id += 1;
   switch (action.type) {
