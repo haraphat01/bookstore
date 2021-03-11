@@ -23,16 +23,16 @@ const fetchBooksSuccess = books => ({
   type: act.FETCH_BOOKS_SUCCESS,
   payload: { books },
 });
-
+const url = 'https://bookstoreapiakata.herokuapp.com/books';
 const saveBookToDb = obj => async dispatch => {
-  axios.post('http://localhost:4000/books', {
+  axios.post(url, {
     books: obj,
   }).then(() => dispatch(addBook(obj)));
 };
 
 const fetchBooks = () => async dispatch => {
   try {
-    const books = await axios.get('http://localhost:4000/books');
+    const books = await axios.get(url);
     return dispatch(fetchBooksSuccess(books.data));
   } catch (e) {
     return e;

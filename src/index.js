@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import rootReducer from './reducers ';
-import { fetchBooks } from './actions ';
+// import { fetchBooks } from './actions ';
 
 const initial = {
   books: [
@@ -26,7 +26,7 @@ const store = createStore(
   rootReducer, initial,
   composeWithDevTools(applyMiddleware(ReduxThunk)),
 );
-store.dispatch(fetchBooks());
+// store.dispatch(fetchBooks());
 /* eslint-enable */
 ReactDOM.render(
   <React.StrictMode>
